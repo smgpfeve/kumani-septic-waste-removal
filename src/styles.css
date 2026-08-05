@@ -102,6 +102,12 @@ a:hover {
   gap: 8px;
 }
 
+.logo-img {
+  height: 40px;
+  width: auto;
+  flex-shrink: 0;
+}
+
 .logo svg {
   flex-shrink: 0;
 }
@@ -175,8 +181,27 @@ a:hover {
 /* Hero Section */
 .hero {
   background: #ecfdf9;
-  padding: 4rem 0;
   overflow: hidden;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Hero background image */
+.hero-background {
+  position: relative;
+  overflow: hidden;
+}
+.hero-background-img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
 }
 
 .hero-grid {
