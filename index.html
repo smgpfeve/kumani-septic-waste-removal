@@ -7,7 +7,7 @@
   <meta name="keywords" content="septic waste removal, septic tank cleaning, waste removal Kenya, Kumani septic" />
   <meta name="author" content="Kumani Septic Waste Removal" />
   <meta name="theme-color" content="#0f766e" />
-  <title>Kumani Septic Waste Removal | Professional &amp; Reliable</title>
+  <title>Professional Septic Tank Cleaning Services Nairobi | Kumani Septic</title>
   <link rel="icon" type="image/svg+xml" href="src/icons/favicon.svg" />
     <link rel="canonical" href="https://kumaniseptic.co.ke/">
     <!-- Open Graph -->
@@ -345,24 +345,24 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Full Name <span aria-hidden="true">*</span></label>
-                <input type="text" id="name" name="name" required placeholder="Your full name" autocomplete="name" />
-                <span class="form-error" role="alert"></span>
+                <input type="text" id="name" name="name" required placeholder="Your full name" autocomplete="name" aria-describedby="name-error" />
+                <span class="form-error" id="name-error" role="alert"></span>
               </div>
               <div class="form-group">
                 <label for="email">Email Address <span aria-hidden="true">*</span></label>
-                <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email" />
-                <span class="form-error" role="alert"></span>
+                <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email" aria-describedby="email-error" />
+                <span class="form-error" id="email-error" role="alert"></span>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
                 <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
-                <input type="tel" id="phone" name="phone" required placeholder="+254 7XX XXX XXX" autocomplete="tel" />
-                <span class="form-error" role="alert"></span>
+                <input type="tel" id="phone" name="phone" required placeholder="+254 7XX XXX XXX" autocomplete="tel" aria-describedby="phone-error" />
+                <span class="form-error" id="phone-error" role="alert"></span>
               </div>
               <div class="form-group">
                 <label for="service">Service Needed</label>
-                <select id="service" name="service">
+                <select id="service" name="service" aria-describedby="service-error">
                   <option value="">Select a service</option>
                   <option value="cleaning">Septic Tank Cleaning</option>
                   <option value="pumping">Septic Tank Pumping</option>
@@ -372,11 +372,13 @@
                   <option value="commercial">Commercial Service</option>
                   <option value="other">Other</option>
                 </select>
+                <span class="form-error" id="service-error" role="alert"></span>
               </div>
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us about your needs..."></textarea>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your needs..." aria-describedby="message-error"></textarea>
+              <span class="form-error" id="message-error" role="alert"></span>
             </div>
             <button type="submit" class="btn btn-primary btn-lg btn-full">Send Message</button>
             <div class="form-success" id="form-success" role="status" hidden>

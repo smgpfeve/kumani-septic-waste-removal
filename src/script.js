@@ -4,11 +4,34 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const hamburger = document.getElementById('hamburger');
     const mainNav = document.getElementById('main-nav');
+    const navList = document.querySelector('.nav-list');
+    const navLinks = document.querySelectorAll('.nav-list a');
 
     hamburger.addEventListener('click', function() {
         const expanded = hamburger.getAttribute('aria-expanded') === 'true';
         hamburger.setAttribute('aria-expanded', !expanded);
-        mainNav.classList.toggle('active');
+        navList.classList.toggle('open');
+        // Update aria-expanded for accessibility
+        hamburger.setAttribute('aria-controls', 'main-nav');
+    });
+
+    // Focus management for mobile navigation
+    navLinks.forEach(link => {
+        link.addEventListener('focus', function() {
+            // Add focus indicator for keyboard navigation
+            this.classList.add('nav-focused');
+        });
+        link.addEventListener('blur', function() {
+            this.classList.remove('nav-focused');
+        });
+    });
+
+    // Keyboard navigation support
+    hamburger.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.click();
+        }
     });
 
     // Back to Top Button
@@ -35,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        // Simple validation - you can enhance this
+        // Enhanced validation with accessibility
         const name = contactForm.name.value.trim();
         const email = contactForm.email.value.trim();
         const phone = contactForm.phone.value.trim();
@@ -44,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Simulate form submission
             contactForm.reset();
             formSuccess.hidden = false;
+            formSuccess.setAttribute('aria-live', 'polite');
             setTimeout(() => {
                 formSuccess.hidden = true;
             }, 5000);
