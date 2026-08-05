@@ -13,9 +13,9 @@
 # Form handling - Netlify will automatically process forms
 # The form in index.html already has the netlify attribute
 
-# Note: Sitemap plugin causing errors - deploy without it for now
-# [[plugins]]
-#   package = "@netlify/plugin-sitemap"
+# Sitemap plugin for proper indexing
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
 
 # Environment variables (if needed)
 [build.environment]
