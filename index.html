@@ -264,14 +264,14 @@
           </div>
           <div class="why-item">
             <div class="why-icon">
-              <img src="src/icons/24-7.svg" alt="24/7 Support" class="why-img" loading="lazy">
+              <img src="src/icons/emergency.svg" alt="24/7 Support" class="why-img" loading="lazy">
             </div>
             <h4>24/7 Support</h4>
             <p>Round-the-clock availability for emergencies, consultations, and scheduling.</p>
           </div>
           <div class="why-item">
             <div class="why-icon">
-              <img src="src/icons/modern-equipment.svg" alt="Modern Equipment" class="why-img" loading="lazy">
+              <img src="src/icons/coverage.svg" alt="Modern Equipment" class="why-img" loading="lazy">
             </div>
             <h4>Modern Equipment</h4>
             <p>State-of-the-art trucks and tools that ensure efficient, thorough service every time.</p>
@@ -380,9 +380,11 @@
               <textarea id="message" name="message" rows="4" placeholder="Tell us about your needs..." aria-describedby="message-error"></textarea>
               <span class="form-error" id="message-error" role="alert"></span>
             </div>
+            <div class="form-error" id="form-error" role="alert" style="display: none;"></div>
             <button type="submit" class="btn btn-primary btn-lg btn-full">Send Message</button>
-            <div class="form-success" id="form-success" role="status" hidden>
+            <div class="form-success" id="form-success" role="status" hidden tabindex="-1">
               <p>Thank you! Your message has been sent. We'll get back to you within 24 hours.</p>
+              <button class="btn btn-small" id="dismiss-success" aria-label="Close success message">Close</button>
             </div>
           </form>
           <aside class="contact-info">
