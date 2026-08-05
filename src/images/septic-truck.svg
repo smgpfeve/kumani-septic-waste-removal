@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <!-- Background -->
+  <rect width="300" height="200" fill="#f0fdfa"/>
+
+  <!-- Truck Body -->
+  <rect x="50" y="100" width="200" height="40" rx="10" fill="#0f766e" stroke="#ccfbf1" stroke-width="2"/>
+
+  <!-- Tank -->
+  <ellipse cx="150" cy="80" rx="80" ry="30" fill="#ccfbf1" stroke="#99f6e4" stroke-width="2"/>
+
+  <!-- Wheels -->
+  <circle cx="80" cy="140" r="20" fill="#374151"/>
+  <circle cx="80" cy="140" r="10" fill="#1f2937"/>
+  <circle cx="220" cy="140" r="20" fill="#374151"/>
+  <circle cx="220" cy="140" r="10" fill="#1f2937"/>
+
+  <!-- Hose -->
+  <path d="M200 120 q50 -30 100 0" stroke="#6b7280" stroke-width="4" fill="none"/>
+  <rect x="295" y="110" width="5" height="20" fill="#6b7280" rx="2"/>
+
+  <!-- Text -->
+  <text x="150" y="125" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">KUMANI</text>
+
+  <!-- Sun -->
+  <circle cx="260" cy="40" r="15" fill="#fbbf24"/>
+</svg>

@@ -1,0 +1,22 @@
+# Netlify Configuration for Kumani Septic Waste Removal
+# This file enables form handling and other Netlify features
+
+[build]
+  publish = "./"
+  command = ""
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Form handling - Netlify will automatically process forms
+# The form in index.html already has the netlify attribute
+
+# Plugin configuration
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+# Environment variables (if needed)
+[build.environment]
+  NODE_ENV = "production"

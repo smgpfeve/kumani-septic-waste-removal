@@ -1,0 +1,26 @@
+# Kumani Septic Waste Removal - Robots.txt
+# Search Engine Indexing Guidelines
+
+User-agent: *
+Allow: /
+
+# Disallow private or sensitive directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /logs/
+
+# Allow CSS, JS, and image files for proper rendering
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Sitemap location
+Sitemap: https://kumaniseptic.co.ke/sitemap.xml
+
+# Crawl-delay for aggressive bots (optional)
+# Crawl-delay: 1

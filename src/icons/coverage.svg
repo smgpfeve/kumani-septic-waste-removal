@@ -1,0 +1,5 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+  <!-- Simple map pin style icon for coverage -->
+  <path d="M24 4C14.6 4 6 12.6 6 21.4c0 10.9 9.5 20.5 21.5 20.5S41.5 31.9 41.5 21.4c0-8.4-8.6 6.5-13.5 13.5C19.4 28.5 12 24 12 12.6c0-7.4 6.6-13.5 13.5-13.5zm0 1.2c-5.4 0-9.5 5.8-9.5 9.5S12.1 30.5 18 30.5c5.4 0 9.5-5.8 9.5-9.5S26.9 12.5 18 12.5z" fill="#0f766e"/>
+  <path d="M24 8v16" stroke="#0f766e" stroke-width="2" stroke-linecap="round"/>
+</svg>
